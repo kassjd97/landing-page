@@ -12,6 +12,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: palegoldenrod;
 }
 
 header {
@@ -42,7 +43,12 @@ a {
 }
 
 a:hover {
-  color: var(--grey);
+  text-shadow: 0 0 7px white;
+}
+
+header > ul > li:hover {
+  transform: translate(0, -2px);
+  transition: all 0.1s ease-in-out;
 }
 
 header > h1 {
@@ -102,8 +108,8 @@ header > h1 {
 }
 
 #submit:hover {
-  background-color: white;
-  color: var(--grey);
+  transform: scale(1.1);
+  transition: 0.25s ease-in-out;
 }
 
 .cover-image {
@@ -138,6 +144,11 @@ header > h1 {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+}
+
+.plant:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 #products > div > p {
@@ -213,6 +224,8 @@ header > h1 {
 #get-yours > button:hover {
   color:  black;
   border: 2px solid black;
+  text-shadow: 0 0 15px white;
+  box-shadow: 0 0 15px white;
 }
 
 footer {
@@ -225,3 +238,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+@media (prefers-reduced-motion: no-preference){
+  * {
+    scroll-behavior: smooth;
+  }
+  }
