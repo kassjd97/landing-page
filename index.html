@@ -7,28 +7,57 @@
   </head>
   <body>
     <header>
-      <h1>Orchids!</h1>
+      <h1 id="header-title">Orchids!</h1>
       <ul>
-        <li><a>Our products</a></li>
-        <li><a>Testimonials</a></li>
-        <li><a>Get yours</a></li>
+        <li><a href="#products">Our products</a></li>
+        <li><a href="#quote">Inspiring quote</a></li>
+        <li><a href="#get-yours">Get yours</a></li>
       </ul>
     </header>
-    <section>
-      <h2>Get the newest offers!</h2>
-      <p>Become an orchid fan by submitting you email below.</p>
-      <input type="email" placeholder="Enter your email..." required>
-      <img src="./images/orchids.jpg" alt="orange orchids">
-    </section>
-    <section>
+    <section id="enter-email">
       <div>
+        <h2>Get the newest offers!</h2>
+        <p>Become an orchid fan by submitting you email below.</p>
+        <input id="email" type="email" placeholder="Enter your email..." required>
+        <button id="submit">Submit</button>
+      </div>
+      <img class="cover-image" src="./images/orchids.jpg" alt="orange orchids">
+    </section>
+    <section id="products">
+      <div>
+        <img class="plant" src="./images/phalaenopsis.jpg">
         <h3>Phalaenopsis</h3>
-        <img src="./images/phalaenopsis.jpg">
-        <p>This is one of the most common orchids, but still one of the mostbeautiful at the same time!</p>
+        <p>This is one of the most common orchids, but still one of the most beautiful at the same time!</p>
       </div>
       <div>
-        <h3></h3>
+        <img class="plant" src="./images/cattleya.jpg">
+        <h3>Cattleya</h3>
+        <p>This plant  was once called "The queen of all orchids", and we can't agree more! It's flowers are stunning.</p>
+      </div>
+      <div>
+        <img class="plant" src="./images/dendrobium.jpg">
+        <h3>Dendrobium</h3>
+        <p>This delicate, but very adaptable specie blooms  a lot, so you won't be lacking of fowers.</p>
+      </div>
+      <div>
+        <img class="plant" src="./images/vanilla.jpg">
+        <h3>Vanilla</h3>
+        <p>This rare but amazing specie nees vertical space to climb, it;s kind of picky, but it can give you natural vanilla beans.</p>
       </div>
     </section>
+    <section id="quote">
+      <p class="quote-text">"An enchanting harmony of fuchsia, purple and pink undertones, Radiant Orchid inspires confidence and emanates great joy, love and health. It is a captivating purple, one that draws you in with its beguiling charm."</P>
+      <p class="quote-author">-Leatrice Eiseman</p>
+    </section>
+    <section id="get-yours">
+      <div>
+        <h4>What are you waiting for?</h4>
+        <p>It's time for you to experience an especial sense just everyday.</p>
+      </div>
+      <button>Get yours!</button>
+    </section>
+    <footer>
+      <span>Copyright© Orchidmania</span>
+    </footer>
   </body>
 </html>
