@@ -10,10 +10,18 @@
   --grey: #616161;
 }
 
+html {
+  scrollbar-width: none;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: palegoldenrod;
-  overflow: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 header {
